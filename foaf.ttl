@@ -1,1 +1,35 @@
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns0: <http://webns.net/mvcb/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
+<http://njh.me/>
+  a foaf:PersonalProfileDocument ;
+  foaf:maker <http://njh.me/#me> ;
+  foaf:primaryTopic <http://njh.me/#me> ;
+  ns0:generatorAgent <http://www.ldodds.com/foaf/foaf-a-matic> ;
+  ns0:errorReportsTo <mailto:leigh@ldodds.com> .
+
+<http://njh.me/#me>
+  a foaf:Person ;
+  foaf:name "Ivana Kamchevska" ;
+  foaf:title "Ms" ;
+  foaf:givenname "Ivana" ;
+  foaf:family_name "Kamchevska" ;
+  foaf:nick "Ivka" ;
+  foaf:mbox_sha1sum "c63f08a99c6a34746c14b37497fddaefb465bd39" ;
+  foaf:homepage <https://raw.githubusercontent.com/IvanaKamchevska/lab5/main/foaf.ttl> ;
+  foaf:phone <tel:070-123-456> ;
+  foaf:workplaceHomepage <http://njh.me/work.com.mk> ;
+  foaf:workInfoHomepage <http://njh.me/mypage.wor.com.mk> ;
+  foaf:schoolHomepage <http://njh.me/school.com.mk> ;
+  foaf:knows [
+    a foaf:Person ;
+    foaf:name "Stefan" ;
+    foaf:mbox_sha1sum "4ed690da8a92d50aab119c9922246a2fe28b3d52" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/StefanKamchevski/lab5/main/foaf.ttl>
+  ], [
+    a foaf:Person ;
+    foaf:name "Nebojsa" ;
+    foaf:mbox_sha1sum "f4961292603a7b7540ba0e81a9214369bb0c08ee" ;
+    rdfs:seeAlso <https://raw.githubusercontent.com/NebojsaStamatovic/lab5/main/foaf.ttl>
+  ] .
